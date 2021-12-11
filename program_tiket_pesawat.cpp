@@ -27,7 +27,6 @@ int main ()
         cout<<"6. TOKYO            $35           $50          $70         \n";
         cout<<"7. BERLIN           $40           $65          $85         \n";
         cout<<"8. BEIJING          $32           $57          $77         \n";
-        cout<<"9. AMSTERDAM        $50           $65          $85         \n";
         cout<<"==========================================================\n";
         printf("\n___________________ Pilih Kota Tujuan ____________________\n");
         cout<<"\nMasukan Kode Kota              	: ";
@@ -325,42 +324,7 @@ int main ()
                     }
                     break;
             }
-            case '9' :
-				 {
-                    cout<<"Kota Tujuan Anda                    : AMSTERDAM\n"<<endl;
-                    printf("___________________ Pilih Kelas Pesawat ___________________");
-                    cout<<"\nMasukan Kode Kelas Pesawat [E/B/X]  : ";
-                    cin>>kelas;
-                    cout<<endl;
-                    if (kelas=='E' || kelas=='e')
-                    {
-                        harga_tiket=50*13000;
-                        PPN=0;
-                        jum_bayar=harga_tiket+PPN;
-                        cout<<"Harga Tiket  = Rp."<<harga_tiket<<endl;
-                        cout<<"PPN          = Rp."<<PPN<<endl;
-                        cout<<"Jumlah Bayar = Rp."<<jum_bayar<<endl;
-                    }
-                    else if (kelas=='B' || kelas=='b')
-                    {
-                        harga_tiket=65*13000;
-                        PPN=0.05*harga_tiket;
-                        jum_bayar=harga_tiket+PPN;
-                        cout<<"Harga Tiket  = Rp."<<harga_tiket<<endl;
-                        cout<<"PPN          = Rp."<<PPN<<endl;
-                        cout<<"Jumlah Bayar = Rp."<<jum_bayar<<endl;
-                    }
-                    else if (kelas=='X' || kelas=='x')
-                    {
-                        harga_tiket=85*13000;
-                        PPN=0.1*harga_tiket;
-                        jum_bayar=harga_tiket+PPN;
-                        cout<<"Harga Tiket  = Rp."<<harga_tiket<<endl;
-                        cout<<"PPN          = Rp."<<PPN<<endl;
-                        cout<<"Jumlah Bayar = Rp."<<jum_bayar<<endl;
-                    }
-                    break;
-            }
+           
             		default:  //bila user menginputkan tidak sesuai pilihan nomor yang ada
                     cout<<"Anda Salah Memasukan Kode"<<endl; 
         }
